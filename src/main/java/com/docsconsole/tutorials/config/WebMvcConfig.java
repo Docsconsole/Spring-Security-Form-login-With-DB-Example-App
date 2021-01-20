@@ -17,6 +17,7 @@ import org.springframework.web.servlet.view.JstlView;
 //@Import({ SecurityConfig.class })
 public class WebMvcConfig implements WebMvcConfigurer {
 
+    @Bean
     public DriverManagerDataSource dataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
